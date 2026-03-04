@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박재성 | Java Full-Stack Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">JSP<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#skills">기술스택</a></li>
+        <li><a href="#career">경력</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#education">학력</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <p class="hero-greeting">안녕하세요, 저는</p>
+      <h1 class="hero-name">박재성<span class="accent">.</span></h1>
+      <h2 class="hero-title">Java Full-Stack Developer</h2>
+      <p class="hero-desc">
+        10년차 개발자로서 Spring Boot 기반 백엔드부터 프론트엔드, 모바일 앱까지<br>
+        다양한 도메인에서 시스템을 설계하고 구축해 왔습니다.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="#contact" class="btn btn-outline">연락하기</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">PM/PL</span>
+          <span class="stat-label">Leadership</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="아래로 스크롤">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            부경대학교 전자공학과를 졸업한 후, 2015년부터 소프트웨어 개발자로서의 커리어를 시작했습니다.
+            <strong>맑은샘파트너스</strong>에서 .NET 기반 의료/ERP 시스템 개발을 경험하며 기초를 다졌고,
+            <strong>세정아이앤씨</strong>에서 Java/Spring 기반 풀스택 개발자로 성장하며
+            다양한 공공/민간 프로젝트를 수행해 왔습니다.
+          </p>
+          <p>
+            단순한 코드 작성을 넘어, <strong>프레임워크 설계 및 확산</strong>, <strong>팀 리딩(PM/PL)</strong>,
+            <strong>고객 소통</strong>까지 개발 라이프사이클 전반에 걸친 역할을 수행하고 있습니다.
+            특히 자체 백엔드/안드로이드 프레임워크를 개발하여 후속 프로젝트에 재사용한 경험이 있으며,
+            이를 통해 조직의 생산성 향상에 기여했습니다.
+          </p>
+        </div>
+        <div class="about-info">
+          <div class="info-card">
+            <div class="info-item">
+              <span class="info-label">이름</span>
+              <span class="info-value">박재성</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">직급</span>
+              <span class="info-value">과장 (R&D팀)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">자격증</span>
+              <span class="info-value">정보처리기사</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">병역</span>
+              <span class="info-value">육군 병장 만기전역</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#9998;</span> Language
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">Java</span>
+            <span class="skill-tag tag-primary">JavaScript</span>
+            <span class="skill-tag tag-secondary">C#</span>
+            <span class="skill-tag tag-secondary">VB.NET</span>
+            <span class="skill-tag tag-secondary">Node.js</span>
+            <span class="skill-tag tag-accent">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#9881;</span> Framework
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">Spring Boot</span>
+            <span class="skill-tag tag-primary">Spring MVC</span>
+            <span class="skill-tag tag-secondary">ASP.NET MVC</span>
+            <span class="skill-tag tag-secondary">.NET / WPF</span>
+            <span class="skill-tag tag-accent">jQuery</span>
+            <span class="skill-tag tag-accent">Webix</span>
+            <span class="skill-tag tag-accent">Kendo UI</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#128451;</span> Database & Server
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">PostgreSQL</span>
+            <span class="skill-tag tag-primary">Oracle</span>
+            <span class="skill-tag tag-secondary">MySQL</span>
+            <span class="skill-tag tag-secondary">MS-SQL</span>
+            <span class="skill-tag tag-accent">Tomcat</span>
+            <span class="skill-tag tag-accent">NGINX</span>
+            <span class="skill-tag tag-accent">AWS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#128736;</span> Tools & Mobile
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">Git</span>
+            <span class="skill-tag tag-secondary">SVN</span>
+            <span class="skill-tag tag-secondary">Jira</span>
+            <span class="skill-tag tag-accent">Figma</span>
+            <span class="skill-tag tag-accent">Postman</span>
+            <span class="skill-tag tag-primary">Android Native</span>
+            <span class="skill-tag tag-secondary">DevExpress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career -->
+  <section class="section" id="career">
+    <div class="container">
+      <h2 class="section-title">Career</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>세정아이앤씨</h3>
+              <span class="timeline-period">2019.07 ~ 현재</span>
+            </div>
+            <p class="timeline-role">R&D팀 / 과장</p>
+            <ul class="timeline-details">
+              <li>Java/Spring Boot 기반 웹 시스템 개발 및 프레임워크 설계</li>
+              <li>공공/민간 프로젝트 PM/PL 다수 수행</li>
+              <li>자체 백엔드/안드로이드 프레임워크 개발 및 사내 확산</li>
+              <li>세정그룹 정보시스템 개편 - 공통컴포넌트/API 중계 시스템 개발</li>
+              <li>WEB/WAS 구성 가이드, DB/AWS 모니터링, 부하 테스트 가이드 등 기반 체계 정립</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>맑은샘파트너스</h3>
+              <span class="timeline-period">2015.12 ~ 2018.12</span>
+            </div>
+            <p class="timeline-role">개발부 / 사원</p>
+            <ul class="timeline-details">
+              <li>ASP.NET MVC (VB.NET) 기반 의료 시스템 개발</li>
+              <li>한의원 CRM/EMR 통합 웹차트 시스템 메인 개발</li>
+              <li>사내 ERP 시스템 개발 (인사/회계/전자결재/게시판)</li>
+              <li>한약제제 공정관리 및 재고관리 시스템 개발</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">전체</button>
+        <button class="filter-btn" data-filter="pm">PM/PL</button>
+        <button class="filter-btn" data-filter="dev">개발</button>
+        <button class="filter-btn" data-filter="support">기술지원</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="support">
+          <div class="project-period">2024.03 ~ 2025.06</div>
+          <h3 class="project-title">세정그룹 정보시스템 개편</h3>
+          <p class="project-role">기술지원 / 프레임워크 개발</p>
+          <p class="project-desc">단위 화면, 리포트 공통 컴포넌트 및 API 중계 시스템 개발. WEB/WAS 구성 가이드, DB/AWS 모니터링, 부하 테스트 가이드 등 기반 체계 정립</p>
+          <div class="project-tags">
+            <span>Spring Boot</span><span>Java</span><span>AWS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+          <div class="project-period">2024.02 ~ 2024.05</div>
+          <h3 class="project-title">현대일렉트릭 배전반 실시간 생산현황 관리</h3>
+          <p class="project-role">개발자</p>
+          <p class="project-desc">IoT 기반 생산현황 대시보드 및 알람 시스템 구축</p>
+          <div class="project-tags">
+            <span>Spring Boot</span><span>IoT</span><span>Dashboard</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+          <div class="project-period">2023.06 ~ 2023.12</div>
+          <h3 class="project-title">대통령기록관 RFID 고도화</h3>
+          <p class="project-role">PDA 개발자</p>
+          <p class="project-desc">안드로이드 기반 RFID 태깅/스캔 기능 개발. 자체 안드로이드 네이티브 프레임워크 도입으로 타 사업에서도 재사용</p>
+          <div class="project-tags">
+            <span>Android</span><span>RFID</span><span>Native</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="pm">
+          <div class="project-period">2023.04 ~ 2023.06</div>
+          <h3 class="project-title">부산시 120콜센터 웹채팅 시스템 구축</h3>
+          <p class="project-role">PM</p>
+          <p class="project-desc">상담사-민원인 간 실시간 채팅 UI/UX 설계 및 기획 총괄. 백오피스/모니터링 시스템 PM 역할 수행</p>
+          <div class="project-tags">
+            <span>PM</span><span>WebSocket</span><span>Chat</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="pm">
+          <div class="project-period">2023.02 ~ 2023.07</div>
+          <h3 class="project-title">부산광역시교육청 콜센터 시스템 유지보수</h3>
+          <p class="project-role">PL / 상담 시스템 개발자</p>
+          <p class="project-desc">지원청 통합 및 이관 작업 PL. 최소 다운타임, 무중단 배포로 업무 연속성 보장</p>
+          <div class="project-tags">
+            <span>PL</span><span>Spring</span><span>Migration</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="pm">
+          <div class="project-period">2022.08 ~ 2023.01</div>
+          <h3 class="project-title">나라기업 소방관리 통합시스템 구축</h3>
+          <p class="project-role">PM</p>
+          <p class="project-desc">고객 맞춤형 백오피스 및 모니터링 기능 설계. 백엔드 프레임워크 직접 개발/도입하여 후속 프로젝트에 재사용</p>
+          <div class="project-tags">
+            <span>PM</span><span>Framework</span><span>Spring</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="pm">
+          <div class="project-period">2022.01 ~ 2022.04</div>
+          <h3 class="project-title">동래구청 스마트 도시관제센터 통합관리</h3>
+          <p class="project-role">PL</p>
+          <p class="project-desc">관제센터 UI 및 기능 통합 설계. CCTV/IoT 연계 업무 흐름 도식화 및 개발 지원</p>
+          <div class="project-tags">
+            <span>PL</span><span>IoT</span><span>CCTV</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+          <div class="project-period">2021.10 ~ 2021.12</div>
+          <h3 class="project-title">JDC 차세대 면세점 시스템 통합 구축</h3>
+          <p class="project-role">개발자</p>
+          <p class="project-desc">주문/배송/정산 백오피스 모듈 개발. 하자보수 전담자로 배정되어 무이슈 마감</p>
+          <div class="project-tags">
+            <span>Spring</span><span>E-Commerce</span><span>BackOffice</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+          <div class="project-period">2021.03 ~ 2021.07</div>
+          <h3 class="project-title">르노코리아자동차 차체 공장 물류시스템 개선</h3>
+          <p class="project-role">개발자</p>
+          <p class="project-desc">실시간 생산라인 바코드 관리 시스템 개발</p>
+          <div class="project-tags">
+            <span>Spring</span><span>Barcode</span><span>MES</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+          <div class="project-period">2021.08 ~ 2021.09</div>
+          <h3 class="project-title">공공 재난/침수 관리시스템</h3>
+          <p class="project-role">개발자</p>
+          <p class="project-desc">옥천군 지하차도 침수관리 - 실시간 수위 센서 연동. 금산군 원클릭 재난전파 - 문자/방송 전파 API 연동</p>
+          <div class="project-tags">
+            <span>IoT</span><span>Sensor</span><span>Public</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+          <div class="project-period">2019.07 ~ 2021.01</div>
+          <h3 class="project-title">세정아이앤씨 ERP / POS 시스템</h3>
+          <p class="project-role">개발자</p>
+          <p class="project-desc">ERP 시스템 및 POS 시스템 개발/유지보수</p>
+          <div class="project-tags">
+            <span>Spring</span><span>ERP</span><span>POS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+          <div class="project-period">2016.04 ~ 2018.12</div>
+          <h3 class="project-title">맑은샘파트너스 의료/ERP 시스템</h3>
+          <p class="project-role">메인 개발자</p>
+          <p class="project-desc">한의원 CRM/EMR 통합 웹차트, 사내 ERP, 한약제제 공정관리, 원외탕전 시스템 등 다수 프로젝트 메인 개발</p>
+          <div class="project-tags">
+            <span>ASP.NET</span><span>VB.NET</span><span>MS-SQL</span><span>Kendo UI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certification -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">Education & Certification</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">&#127891;</div>
+          <h3>부경대학교</h3>
+          <p class="edu-detail">전자공학과 (심화) | 4년제</p>
+          <p class="edu-period">2009.03 ~ 2015.02 졸업</p>
+          <p class="edu-extra">학점 3.75 / 4.5 | 부산</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">&#127979;</div>
+          <h3>가야고등학교</h3>
+          <p class="edu-detail">이과계열</p>
+          <p class="edu-period">2006.03 ~ 2009.02 졸업</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">&#128196;</div>
+          <h3>정보처리기사</h3>
+          <p class="edu-detail">한국산업인력공단</p>
+          <p class="edu-period">2016.11 취득</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">&#127894;</div>
+          <h3>군 복무</h3>
+          <p class="edu-detail">육군 병장 만기전역</p>
+          <p class="edu-period">2011.04 ~ 2013.01</p>
+          <p class="edu-extra">야전통신운용/정비</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content">
+        <p class="contact-text">
+          새로운 기회나 협업에 관심이 있으시다면 편하게 연락주세요.
+        </p>
+        <div class="contact-cards">
+          <a href="https://github.com/jaeseong90" class="contact-card" target="_blank" rel="noopener">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <span>GitHub</span>
+          </a>
+          <a href="mailto:jaeseong90@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 박재성. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
