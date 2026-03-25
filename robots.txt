@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jaeseong90.github.io/jaeseong90Folio/sitemap.xml
