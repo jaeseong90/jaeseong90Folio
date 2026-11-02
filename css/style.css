@@ -197,7 +197,7 @@ button {
 .meta-item dd {
   font-size: 0.92rem;
   font-weight: 500;
-  word-break: break-all;
+  overflow-wrap: anywhere;
 }
 
 .meta-item a,
@@ -303,7 +303,7 @@ button {
 .info-row dd {
   font-size: 0.92rem;
   font-weight: 500;
-  word-break: break-all;
+  overflow-wrap: anywhere;
 }
 
 /* ===== Skills ===== */
@@ -675,7 +675,8 @@ button {
 /* ===== Print (이력서 출력 / PDF 저장) ===== */
 @media print {
   @page {
-    margin: 15mm;
+    size: A4;
+    margin: 14mm 15mm;
   }
 
   :root {
@@ -690,16 +691,21 @@ button {
     --accent: #222;
   }
 
+  /* 모든 크기가 rem 기준이므로 html 폰트 크기 하나로 전체 밀도를 조절한다 */
+  html {
+    font-size: 12px;
+  }
+
   body {
-    font-size: 11.5px;
-    line-height: 1.5;
+    line-height: 1.45;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
   .nav,
   .filter-bar,
-  .footer {
+  .footer,
+  .about-grid .info-table {
     display: none !important;
   }
 
@@ -708,22 +714,118 @@ button {
     padding: 0;
   }
 
+  /* 헤더: 이름·요약 아래에 메타 4칸을 가로로 */
   .resume-header {
-    padding: 0 0 20px;
+    padding: 0 0 14px;
+  }
+
+  .header-main {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .name {
     font-size: 2rem;
   }
 
+  .summary {
+    max-width: none;
+  }
+
+  .header-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: none;
+    border-top: 1px solid var(--border);
+    border-radius: 0;
+  }
+
+  .meta-item {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 8px 10px 0 0;
+    border-bottom: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
   .section {
-    padding: 22px 0;
+    padding: 16px 0;
     border-bottom: none;
   }
 
   .section-title {
-    font-size: 1.2rem;
-    margin-bottom: 16px;
+    font-size: 1.25rem;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+  }
+
+  .sub-title {
+    margin: 14px 0 8px;
+  }
+
+  .bullet-list li {
+    margin-bottom: 3px;
+  }
+
+  .skill-row {
+    grid-template-columns: 130px 1fr;
+    padding: 8px 0;
+  }
+
+  .tag {
+    padding: 2px 7px;
+  }
+
+  .company {
+    margin-bottom: 24px;
+  }
+
+  .company-summary {
+    margin: 10px 0 14px;
+  }
+
+  .project-head,
+  .project-row {
+    grid-template-columns: 95px 1fr 110px;
+    gap: 12px;
+  }
+
+  .project-row {
+    padding: 9px 0;
+  }
+
+  .p-desc {
+    margin-bottom: 5px;
+  }
+
+  .p-tags li {
+    padding: 1px 5px;
+    font-size: 0.7rem;
+  }
+
+  .edu-row {
+    grid-template-columns: 95px 1fr 70px;
+    padding: 8px 0;
+  }
+
+  /* 연락처: 표 대신 한 줄 나열 */
+  .contact-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+    max-width: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  .contact-table .info-row {
+    display: flex;
+    gap: 6px;
+    padding: 0;
+    border: none;
   }
 
   .project-row.hidden {
@@ -734,11 +836,19 @@ button {
     display: block !important;
   }
 
-  .company,
+  /* 페이지 나눔: 섹션 제목은 다음 내용과 붙이고, 행 하나는 중간에서 자르지 않는다
+     (회사 헤더·프로젝트 헤더까지 묶으면 Chrome 이 블록 전체를 다음 쪽으로 밀어 빈 공간이 생기므로 제외) */
+  .section-title,
+  .sub-title,
+  .company-head {
+    break-after: avoid;
+  }
+
   .project-row,
   .edu-row,
-  .info-table,
-  .header-meta {
+  .skill-row,
+  .header-meta,
+  .contact-table {
     break-inside: avoid;
   }
 
