@@ -28,3 +28,5 @@ Open `index.html` directly in a browser or use any static file server. No build 
 - Project rows use `data-category` attributes (`pm`, `dev`, `support`) for JS filtering; a company's `.project-list` gets `.empty` when no rows match
 - Career periods: `<span class="period" data-start="YYYY-MM" data-end="YYYY-MM">` — omit `data-end` for the current job; JS appends the duration (inclusive month count) and fills `#totalCareer`
 - Projects are listed newest-first under their company; add new projects as `.project-row` entries at the top of the company's list
+- The 세정아이앤씨 `.company-summary` first bullet states the project count by category ("14건 (PM/PL 5 · AA/기술지원 2 · 개발 7)") — recount from the rows' `data-category` whenever a row is added or removed
+- Content rules: 핵심 역량 (01) lists capabilities; a company summary lists facts specific to that company — don't repeat the same bullets in both. Keep tags in English except product names (전자정부 표준프레임워크, FORMA); use the full name "전자정부 표준프레임워크" everywhere
