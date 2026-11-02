@@ -10,9 +10,9 @@ Static resume/portfolio page (이력서·경력기술서) for 박재성 (JaeSeon
 
 Plain HTML/CSS/JS — no build tools, no frameworks, no package manager.
 
-- `index.html` — Single page: nav, header (name/title/summary + meta table), 01 소개, 02 기술 스택, 03 경력 사항 (company blocks, each with summary bullets + project rows), 04 학력·자격·병역, 05 연락처·링크
+- `index.html` — Single page: nav, header (name/title/summary + meta table), 01 소개 (one short present-tense paragraph + 핵심 역량 bullets — no school/certs/military here, those live only in 04), 02 기술 스택, 03 경력 사항 (company blocks, each with summary bullets + project rows), 04 학력·자격·병역, 05 연락처·링크
 - `css/style.css` — All styles, dark theme using CSS custom properties (`:root` vars), responsive breakpoints at 768px and 480px (scoped to `screen`), plus a `@media print` block that switches to a light palette and shows all projects. All sizes are `rem`, so print density is tuned with `html { font-size }` in that block (target: A4, 3 pages). Don't put `break-inside: avoid` on `.company` — Chrome then pushes the whole block to a new page and leaves the section title orphaned.
-- To check print output: `chrome.exe --headless=new --print-to-pdf=... file:///.../index.html` with a fresh `--user-data-dir` (it caches CSS), then open the PDF in a Chrome tab via a local HTTP server (the browser extension can't open `file://`).
+- To check print output: `chrome.exe --headless=new --print-to-pdf=... file:///.../index.html` with a fresh `--user-data-dir` (it caches CSS), then rasterize pages with PyMuPDF (`page.get_pixmap(dpi=80).save(...)`) and view the PNGs, or open the PDF in a Chrome tab via a local HTTP server (the browser extension can't open `file://`). Column headers (`.project-head`) and titles carry `break-after: avoid` so they never sit alone at a page bottom.
 - `js/main.js` — Vanilla JS: mobile menu toggle, active nav link on scroll, project category filter (with count + hiding empty company lists), print button, automatic 재직기간/총 경력 calculation from `data-start`/`data-end`
 
 ## Development

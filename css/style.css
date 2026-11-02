@@ -259,11 +259,8 @@ button {
 }
 
 /* ===== About ===== */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 48px;
-  align-items: start;
+.about-text {
+  max-width: 800px;
 }
 
 .about-text p {
@@ -602,8 +599,7 @@ button {
     padding: calc(var(--nav-h) + 40px) 0 40px;
   }
 
-  .header-main,
-  .about-grid {
+  .header-main {
     grid-template-columns: 1fr;
     gap: 32px;
   }
@@ -704,8 +700,7 @@ button {
 
   .nav,
   .filter-bar,
-  .footer,
-  .about-grid .info-table {
+  .footer {
     display: none !important;
   }
 
@@ -747,8 +742,8 @@ button {
     border-bottom: none;
   }
 
-  .about-grid {
-    grid-template-columns: 1fr;
+  .about-text {
+    max-width: none;
   }
 
   .section {
@@ -840,7 +835,8 @@ button {
      (회사 헤더·프로젝트 헤더까지 묶으면 Chrome 이 블록 전체를 다음 쪽으로 밀어 빈 공간이 생기므로 제외) */
   .section-title,
   .sub-title,
-  .company-head {
+  .company-head,
+  .project-head {
     break-after: avoid;
   }
 
